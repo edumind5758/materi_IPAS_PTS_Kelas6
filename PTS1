@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pembelajaran Rangkuman PTS IPAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .bone-part { cursor: pointer; transition: all 0.3s; }
+        .bone-part:hover { fill: #fbbf24; stroke: #f59e0b; stroke-width: 2; }
+        .quiz-option { transition: all 0.3s; }
+        .quiz-option:hover { transform: translateY(-2px); }
+        .correct { background: #10b981 !important; color: white; }
+        .incorrect { background: #ef4444 !important; color: white; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-indigo-800 mb-2">📚 Materi Rangkuman IPAS</h1>
+            <p class="text-lg text-gray-600">Midarno @SDITSALSABILA 2025</p>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex flex-wrap justify-center mb-8 bg-white rounded-lg shadow-lg p-2">
+            <button onclick="showTab('rangka')" class="tab-btn px-6 py-3 mx-1 my-1 rounded-lg font-semibold transition-all bg-indigo-600 text-white">
+                🦴 Sistem Rangka
+            </button>
+            <button onclick="showTab('otot')" class="tab-btn px-6 py-3 mx-1 my-1 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700 hover:bg-indigo-100">
+                💪 Sistem Otot
+            </button>
+            <button onclick="showTab('saraf')" class="tab-btn px-6 py-3 mx-1 my-1 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700 hover:bg-indigo-100">
+                🧠 Sistem Saraf
+            </button>
+            <button onclick="showTab('sejarah')" class="tab-btn px-6 py-3 mx-1 my-1 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700 hover:bg-indigo-100">
+                🏛️ Sejarah Indonesia
+            </button>
+            <button onclick="showTab('quiz')" class="tab-btn px-6 py-3 mx-1 my-1 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700 hover:bg-indigo-100">
+                🎯 Kuis
+            </button>
+        </div>
+
+        <!-- Sistem Rangka Tab -->
+        <div id="rangka" class="tab-content active">
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">🦴 Sistem Rangka Manusia</h2>
+                
+                <!-- Fungsi Rangka -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Fungsi Rangka Manusia:</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">🛡️ Perlindungan</h4>
+                            <p class="text-sm text-gray-700">Melindungi organ-organ vital seperti otak, jantung, dan paru-paru</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">🏗️ Penyangga</h4>
+                            <p class="text-sm text-gray-700">Memberikan bentuk dan struktur tubuh</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800">🚶 Pergerakan</h4>
+                            <p class="text-sm text-gray-700">Tempat melekatnya otot untuk menghasilkan gerakan</p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800">🩸 Pembentukan Darah</h4>
+                            <p class="text-sm text-gray-700">Sumsum tulang memproduksi sel darah merah dan putih</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bentuk Tulang -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Klasifikasi Tulang Berdasarkan Bentuk:</h3>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="bg-yellow-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">📏</div>
+                            <h4 class="font-semibold text-yellow-800">Tulang Panjang</h4>
+                            <p class="text-sm text-gray-700">Contoh: Femur, Humerus, Tibia</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">⬜</div>
+                            <h4 class="font-semibold text-orange-800">Tulang Pendek</h4>
+                            <p class="text-sm text-gray-700">Contoh: Tulang pergelangan tangan</p>
+                        </div>
+                        <div class="bg-pink-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🍃</div>
+                            <h4 class="font-semibold text-pink-800">Tulang Pipih</h4>
+                            <p class="text-sm text-gray-700">Contoh: Tulang rusuk, tengkorak</p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🔸</div>
+                            <h4 class="font-semibold text-indigo-800">Tulang Tidak Beraturan</h4>
+                            <p class="text-sm text-gray-700">Contoh: Tulang belakang</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tengkorak -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Bagian Tulang Tengkorak:</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="relative max-w-md mx-auto">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.-r_7KyOvAafxTDFaYPA9IwHaEO?pid=Api&h=220&P=0" 
+                                 alt="Diagram tulang tengkorak manusia" 
+                                 class="w-full rounded-lg shadow-md"
+                                 onerror="this.style.display='none'; document.getElementById('skull-fallback').style.display='block';">
+                            
+                            <!-- Fallback SVG if image fails to load -->
+                            <div id="skull-fallback" style="display: none;">
+                                <svg viewBox="0 0 400 300" class="w-full">
+                                    <!-- Skull outline -->
+                                    <ellipse cx="200" cy="150" rx="120" ry="100" fill="#f3f4f6" stroke="#374151" stroke-width="2"/>
+                                    <!-- Frontal bone -->
+                                    <path d="M 120 80 Q 200 60 280 80 Q 280 120 200 130 Q 120 120 120 80" fill="#ddd6fe" class="bone-part" onclick="showBoneInfo('frontal')"/>
+                                    <!-- Parietal bones -->
+                                    <path d="M 120 80 Q 150 50 200 50 Q 250 50 280 80 Q 280 100 200 90 Q 120 100 120 80" fill="#fef3c7" class="bone-part" onclick="showBoneInfo('parietal')"/>
+                                    <!-- Temporal bones -->
+                                    <ellipse cx="130" cy="140" rx="25" ry="35" fill="#fed7d7" class="bone-part" onclick="showBoneInfo('temporal')"/>
+                                    <ellipse cx="270" cy="140" rx="25" ry="35" fill="#fed7d7" class="bone-part" onclick="showBoneInfo('temporal')"/>
+                                    <!-- Occipital bone -->
+                                    <path d="M 120 180 Q 200 200 280 180 Q 280 220 200 230 Q 120 220 120 180" fill="#d1fae5" class="bone-part" onclick="showBoneInfo('occipital')"/>
+                                    <!-- Eye sockets -->
+                                    <circle cx="170" cy="130" r="15" fill="white" stroke="#374151"/>
+                                    <circle cx="230" cy="130" r="15" fill="white" stroke="#374151"/>
+                                    <!-- Nasal bone -->
+                                    <rect x="190" y="140" width="20" height="30" fill="#fde68a" class="bone-part" onclick="showBoneInfo('nasal')"/>
+                                    <!-- Maxilla -->
+                                    <rect x="160" y="170" width="80" height="25" fill="#fecaca" class="bone-part" onclick="showBoneInfo('maxilla')"/>
+                                    <!-- Mandible -->
+                                    <path d="M 150 200 Q 200 210 250 200 Q 250 220 200 225 Q 150 220 150 200" fill="#bfdbfe" class="bone-part" onclick="showBoneInfo('mandible')"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Clickable areas overlay for the image -->
+                        <div class="mt-4 grid md:grid-cols-2 gap-3">
+                            <button onclick="showBoneInfo('frontal')" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-lg text-left transition-all">
+                                <strong class="text-purple-800">Tulang Frontal</strong>
+                                <p class="text-sm text-gray-600">Bagian dahi</p>
+                            </button>
+                            <button onclick="showBoneInfo('parietal')" class="bg-yellow-100 hover:bg-yellow-200 p-3 rounded-lg text-left transition-all">
+                                <strong class="text-yellow-800">Tulang Parietal</strong>
+                                <p class="text-sm text-gray-600">Bagian atas tengkorak</p>
+                            </button>
+                            <button onclick="showBoneInfo('temporal')" class="bg-red-100 hover:bg-red-200 p-3 rounded-lg text-left transition-all">
+                                <strong class="text-red-800">Tulang Temporal</strong>
+                                <p class="text-sm text-gray-600">Bagian samping</p>
+                            </button>
+                            <button onclick="showBoneInfo('occipital')" class="bg-green-100 hover:bg-green-200 p-3 rounded-lg text-left transition-all">
+                                <strong class="text-green-800">Tulang Occipital</strong>
+                                <p class="text-sm text-gray-600">Bagian belakang</p>
+                            </button>
+                            <button onclick="showBoneInfo('nasal')" class="bg-orange-100 hover:bg-orange-200 p-3 rounded-lg text-left transition-all">
+                                <strong class="text-orange-800">Tulang Hidung</strong>
+                                <p class="text-sm text-gray-600">Batang hidung</p>
+                            </button>
+                            <button onclick="showBoneInfo('mandible')" class="bg-blue-100 hover:bg-blue-200 p-3 rounded-lg text-left transition-all">
+                                <strong class="text-blue-800">Tulang Mandible</strong>
+                                <p class="text-sm text-gray-600">Rahang bawah</p>
+                            </button>
+                        </div>
+                        
+                        <div id="bone-info" class="mt-4 p-3 bg-white rounded border-l-4 border-indigo-500">
+                            <p class="text-gray-600">Klik pada tombol bagian tulang untuk melihat informasi detail</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anggota Gerak Atas dan Bawah -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Rangka Anggota Gerak Atas dan Bawah:</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <img src="https://khazanahilmu.com/wp-content/uploads/2021/08/anggota-gerak-bawah-599x365.jpg" 
+                                 alt="Diagram rangka anggota gerak bawah manusia" 
+                                 class="w-full max-w-xs mx-auto rounded-lg shadow-md"
+                                 onerror="this.style.display='none'; document.getElementById('leg-fallback').style.display='block';">
+                            
+                            <!-- Fallback SVG if image fails to load -->
+                            <div id="leg-fallback" style="display: none;">
+                                <svg viewBox="0 0 200 400" class="w-full max-w-xs mx-auto">
+                                    <!-- Pelvis -->
+                                    <ellipse cx="100" cy="50" rx="60" ry="20" fill="#fef3c7" stroke="#374151" stroke-width="2"/>
+                                    <text x="100" y="45" text-anchor="middle" class="text-xs font-semibold">Pelvis</text>
+                                    
+                                    <!-- Femur -->
+                                    <rect x="95" y="70" width="10" height="120" fill="#ddd6fe" stroke="#374151" stroke-width="1"/>
+                                    <text x="110" y="130" class="text-xs font-semibold">Femur</text>
+                                    
+                                    <!-- Patella -->
+                                    <circle cx="100" cy="195" r="8" fill="#fed7d7" stroke="#374151"/>
+                                    <text x="115" y="200" class="text-xs font-semibold">Patella</text>
+                                    
+                                    <!-- Tibia -->
+                                    <rect x="92" y="205" width="8" height="100" fill="#d1fae5" stroke="#374151" stroke-width="1"/>
+                                    <text x="75" y="255" class="text-xs font-semibold">Tibia</text>
+                                    
+                                    <!-- Fibula -->
+                                    <rect x="105" y="205" width="6" height="100" fill="#fecaca" stroke="#374151" stroke-width="1"/>
+                                    <text x="115" y="255" class="text-xs font-semibold">Fibula</text>
+                                    
+                                    <!-- Foot bones -->
+                                    <ellipse cx="100" cy="320" rx="25" ry="15" fill="#fde68a" stroke="#374151"/>
+                                    <text x="100" y="325" text-anchor="middle" class="text-xs font-semibold">Tarsal</text>
+                                    
+                                    <rect x="85" y="335" width="30" height="8" fill="#bfdbfe" stroke="#374151"/>
+                                    <text x="100" y="342" text-anchor="middle" class="text-xs font-semibold">Metatarsal</text>
+                                    
+                                    <rect x="90" y="345" width="20" height="25" fill="#f3e8ff" stroke="#374151"/>
+                                    <text x="100" y="360" text-anchor="middle" class="text-xs font-semibold">Phalanges</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="font-semibold text-gray-800">Fungsi Tulang Anggota Gerak:</h4>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <strong>🦵 Tungkai Atas (Femur):</strong> Tulang terpanjang dan terkuat, menopang berat badan
+                            </div>
+                            <div class="bg-green-50 p-3 rounded">
+                                <strong>🦴 Tungkai Bawah (Tibia & Fibula):</strong> Tibia menahan beban, Fibula sebagai penyangga
+                            </div>
+                            <div class="bg-yellow-50 p-3 rounded">
+                                <strong>🦶 Kaki:</strong> Tarsal untuk keseimbangan, Metatarsal untuk tumpuan, Phalanges untuk keseimbangan halus
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sendi -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Jenis-jenis Sendi dan Gerakannya:</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.wVuikYEAWlr3e4bdSHRaoQHaHc?pid=Api&h=220&P=0" 
+                                 alt="Diagram jenis-jenis sendi dan gerakannya" 
+                                 class="w-full rounded-lg shadow-md mb-4"
+                                 onerror="this.style.display='none'; document.getElementById('joint-fallback').style.display='block';">
+                            
+                            <!-- Fallback content if image fails to load -->
+                            <div id="joint-fallback" style="display: none;" class="grid grid-cols-3 gap-2">
+                                <div class="bg-red-50 p-3 rounded text-center">
+                                    <div class="text-2xl mb-1">🔴</div>
+                                    <p class="text-xs font-semibold">Sendi Engsel</p>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded text-center">
+                                    <div class="text-2xl mb-1">🔵</div>
+                                    <p class="text-xs font-semibold">Sendi Peluru</p>
+                                </div>
+                                <div class="bg-green-50 p-3 rounded text-center">
+                                    <div class="text-2xl mb-1">🟢</div>
+                                    <p class="text-xs font-semibold">Sendi Putar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-2">🔴 Sendi Engsel</h4>
+                                <p class="text-sm mb-2">Gerakan: Fleksi dan Ekstensi</p>
+                                <p class="text-xs text-gray-600">Contoh: Siku, Lutut</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-2">🔵 Sendi Peluru</h4>
+                                <p class="text-sm mb-2">Gerakan: Ke segala arah</p>
+                                <p class="text-xs text-gray-600">Contoh: Bahu, Panggul</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 mb-2">🟢 Sendi Putar</h4>
+                                <p class="text-sm mb-2">Gerakan: Rotasi</p>
+                                <p class="text-xs text-gray-600">Contoh: Leher, Pergelangan tangan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistem Otot Tab -->
+        <div id="otot" class="tab-content">
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">💪 Sistem Otot Manusia</h2>
+                
+                <!-- Cara Kerja Otot -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Bagaimana Cara Kerja Otot?</h3>
+                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+                        <p class="text-gray-700 mb-4">Seperti yang kita tahu, tulang-tulang dapat bergerak karena adanya otot. Lalu, bagaimana, sih, caranya otot bekerja? Berdasarkan cara kerjanya, otot itu dibedakan menjadi 2 macam:</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-3">🤝 1. Otot Sinergis</h4>
+                                <p class="text-sm text-gray-700 mb-3">Otot sinergis adalah otot yang bekerja sama secara searah. Maksudnya gimana tuh? Jadi, si otot-otot ini berkontraksi dan berelaksasi secara bersamaan. Saat satu otot berkontraksi, otot lainnya juga ikut berkontraksi. Saat satu otot relaksasi, otot lainnya juga ikut relaksasi. Ya, keduanya saling berjuang bersama-sama. Bukannya cuma satu pihak yang berjuang dan yang lain nuntut.</p>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-3">⚔️ 2. Otot Antagonis</h4>
+                                <p class="text-sm text-gray-700 mb-3">Berkebalikan dengan sinergis, otot antagonis adalah otot yang bekerja berlawanan. Artinya, apabila satu otot mengalami kontraksi, otot yang lain melakukan relaksasi. Contohnya adalah pada otot bisep dan trisep.</p>
+                                
+                                <!-- GIF placeholder for antagonistic muscles -->
+                                <div class="mt-3 bg-gray-50 p-3 rounded text-center">
+                                    <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/otot-antagonis-1.gif" 
+                                         alt="Animasi otot antagonis bisep dan trisep" 
+                                         class="w-full max-w-xs mx-auto rounded"
+                                         onerror="this.style.display='none'; document.getElementById('muscle-antagonist-fallback').style.display='block';">
+                                    
+                                    <!-- Fallback SVG if GIF fails to load -->
+                                    <div id="muscle-antagonist-fallback" style="display: none;">
+                                        <svg viewBox="0 0 200 100" class="w-full max-w-xs mx-auto">
+                                            <!-- Arm bone -->
+                                            <line x1="50" y1="50" x2="150" y2="50" stroke="#8b5cf6" stroke-width="4"/>
+                                            
+                                            <!-- Bicep (contracted) -->
+                                            <path d="M 60 40 Q 100 20 140 40" stroke="#ef4444" stroke-width="6" fill="none"/>
+                                            <text x="100" y="30" text-anchor="middle" class="text-xs font-semibold fill-red-600">Bisep (Kontraksi)</text>
+                                            
+                                            <!-- Tricep (relaxed) -->
+                                            <path d="M 60 60 Q 100 80 140 60" stroke="#94a3b8" stroke-width="4" fill="none"/>
+                                            <text x="100" y="85" text-anchor="middle" class="text-xs font-semibold fill-gray-500">Trisep (Relaksasi)</text>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fungsi Otot -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Fungsi Otot:</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <div class="text-2xl mb-2">🏃</div>
+                            <h4 class="font-semibold text-red-800">Pergerakan</h4>
+                            <p class="text-sm text-gray-700">Menggerakkan tulang dan sendi</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="text-2xl mb-2">🏗️</div>
+                            <h4 class="font-semibold text-blue-800">Postur</h4>
+                            <p class="text-sm text-gray-700">Mempertahankan posisi tubuh</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="text-2xl mb-2">🔥</div>
+                            <h4 class="font-semibold text-green-800">Panas</h4>
+                            <p class="text-sm text-gray-700">Menghasilkan panas tubuh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jenis Otot -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Jenis Otot dan Gerakannya:</h3>
+                    <div class="mb-4 bg-gray-50 p-4 rounded-lg">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.Sc5-i35ERFNmfR7KmvRcIgHaEO?pid=Api&h=220&P=0" 
+                             alt="Diagram jenis-jenis otot manusia" 
+                             class="w-full max-w-2xl mx-auto rounded-lg shadow-md mb-4"
+                             onerror="this.style.display='none'; document.getElementById('muscle-types-fallback').style.display='block';">
+                        
+                        <!-- Fallback content if image fails to load -->
+                        <div id="muscle-types-fallback" style="display: none;" class="grid md:grid-cols-3 gap-4">
+                            <div class="bg-yellow-50 p-4 rounded text-center">
+                                <div class="text-3xl mb-2">🟡</div>
+                                <h4 class="font-semibold text-yellow-800">Otot Lurik</h4>
+                                <p class="text-xs text-gray-600">Bergaris melintang</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded text-center">
+                                <div class="text-3xl mb-2">🔴</div>
+                                <h4 class="font-semibold text-red-800">Otot Polos</h4>
+                                <p class="text-xs text-gray-600">Tidak bergaris</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded text-center">
+                                <div class="text-3xl mb-2">🟣</div>
+                                <h4 class="font-semibold text-purple-800">Otot Jantung</h4>
+                                <p class="text-xs text-gray-600">Bercabang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                            <h4 class="font-semibold text-yellow-800 mb-2">🟡 Otot Lurik (Rangka)</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <strong>Ciri-ciri:</strong>
+                                    <ul class="list-disc list-inside text-gray-700 mt-1">
+                                        <li>Memiliki garis melintang</li>
+                                        <li>Bekerja secara sadar</li>
+                                        <li>Berbentuk silindris panjang</li>
+                                        <li>Berinti banyak di tepi</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong>Gerakan:</strong>
+                                    <p class="text-gray-700 mt-1">Cepat, kuat, mudah lelah. Menggerakkan tulang dan sendi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                            <h4 class="font-semibold text-red-800 mb-2">🔴 Otot Polos</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <strong>Ciri-ciri:</strong>
+                                    <ul class="list-disc list-inside text-gray-700 mt-1">
+                                        <li>Tidak bergaris melintang</li>
+                                        <li>Bekerja tidak sadar</li>
+                                        <li>Berbentuk gelendong</li>
+                                        <li>Berinti satu di tengah</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong>Gerakan:</strong>
+                                    <p class="text-gray-700 mt-1">Lambat, lemah, tidak mudah lelah. Menggerakkan organ dalam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                            <h4 class="font-semibold text-purple-800 mb-2">🟣 Otot Jantung</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <strong>Ciri-ciri:</strong>
+                                    <ul class="list-disc list-inside text-gray-700 mt-1">
+                                        <li>Memiliki garis melintang</li>
+                                        <li>Bekerja tidak sadar</li>
+                                        <li>Bercabang dan beranyam</li>
+                                        <li>Berinti satu di tengah</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong>Gerakan:</strong>
+                                    <p class="text-gray-700 mt-1">Berirama, kuat, tidak pernah lelah. Memompa darah.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistem Saraf Tab -->
+        <div id="saraf" class="tab-content">
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">🧠 Sistem Saraf Manusia</h2>
+                
+                <!-- Fungsi Saraf -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Fungsi Sistem Saraf:</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="text-3xl mb-2">📡</div>
+                            <h4 class="font-semibold text-blue-800">Menerima Rangsang</h4>
+                            <p class="text-sm text-gray-700">Mendeteksi perubahan lingkungan internal dan eksternal</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="text-3xl mb-2">⚡</div>
+                            <h4 class="font-semibold text-green-800">Menghantarkan Impuls</h4>
+                            <p class="text-sm text-gray-700">Menyampaikan informasi ke seluruh tubuh</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <div class="text-3xl mb-2">🎯</div>
+                            <h4 class="font-semibold text-purple-800">Merespon</h4>
+                            <p class="text-sm text-gray-700">Mengkoordinasi respons tubuh terhadap rangsang</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apa Itu Rangsangan atau Impuls -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Apa Itu Rangsangan atau Impuls?</h3>
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-4">
+                        <p class="text-gray-700 mb-4">Squad, kamu penasaran nggak sih, apa yang sebenarnya dimaksud dengan rangsangan? <strong>Rangsangan atau impuls adalah pesan yang diterima oleh reseptor atau tubuh dari lingkungan luar, kemudian dibawa oleh neuron atau serangkaian pulsa elektrik yang menjalari serabut saraf.</strong></p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-3">🌟 Contoh Impuls:</h4>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="bg-yellow-50 p-2 rounded">🌡️ Perubahan suhu</div>
+                                    <div class="bg-purple-50 p-2 rounded">👋 Tekanan</div>
+                                    <div class="bg-green-50 p-2 rounded">👃 Bau & aroma</div>
+                                    <div class="bg-blue-50 p-2 rounded">👂 Suara</div>
+                                    <div class="bg-red-50 p-2 rounded">👁️ Benda</div>
+                                    <div class="bg-orange-50 p-2 rounded">👅 Rasa (asin, manis, asam, pahit)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 mb-3">⚡ Proses Impuls:</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs mr-2">1</span>
+                                        <span>Reseptor menerima rangsang</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs mr-2">2</span>
+                                        <span>Neuron membawa pesan</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center text-xs mr-2">3</span>
+                                        <span>Efektor memberikan respons</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs mr-2">4</span>
+                                        <span>Terjadi gerakan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 bg-indigo-50 p-4 rounded-lg">
+                            <p class="text-indigo-800 font-medium">💡 Wah ternyata proses kita bergerak saja melibatkan sistem saraf, ya!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jenis Gerakan -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Jenis-jenis Gerakan:</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                            <h4 class="font-semibold text-green-800 mb-3">🧠 Gerak Sadar</h4>
+                            <p class="text-sm text-gray-700 mb-3">Gerak sadar adalah gerak yang terjadi akibat disengaja atau disadari.</p>
+                            <div class="bg-white p-3 rounded">
+                                <strong class="text-green-700">Contoh:</strong>
+                                <ul class="text-sm text-gray-700 mt-1 list-disc list-inside">
+                                    <li>Memegang buku saat ingin belajar</li>
+                                    <li>Mengambil pensil</li>
+                                    <li>Berjalan ke sekolah</li>
+                                    <li>Menulis di buku</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                            <h4 class="font-semibold text-red-800 mb-3">⚡ Gerak Refleks</h4>
+                            <p class="text-sm text-gray-700 mb-3">Gerak refleks adalah gerak yang tidak disengaja atau tidak disadari. Penjalaran pada gerak reflek berlangsung cepat, melewati jalur pendek dan tidak melewati otak, tetapi melewati sumsum tulang belakang.</p>
+                            <div class="bg-white p-3 rounded">
+                                <strong class="text-red-700">Contoh:</strong>
+                                <ul class="text-sm text-gray-700 mt-1 list-disc list-inside">
+                                    <li>Terangkatnya kaki saat menginjak paku</li>
+                                    <li>Menutupnya kelopak mata saat ada benda asing</li>
+                                    <li>Gerakan tangan saat memegang benda panas</li>
+                                    <li>Berkedip saat ada cahaya terang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gambar Sistem Saraf -->
+                    <div class="mt-6 bg-gray-50 p-4 rounded-lg">
+                        <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Mengenal%20Sistem%20Saraf%20Manusia%202.jpg" 
+                             alt="Diagram sistem saraf manusia dan cara kerja impuls" 
+                             class="w-full max-w-2xl mx-auto rounded-lg shadow-md"
+                             onerror="this.style.display='none'; document.getElementById('nervous-system-fallback').style.display='block';">
+                        
+                        <!-- Fallback SVG if image fails to load -->
+                        <div id="nervous-system-fallback" style="display: none;">
+                            <svg viewBox="0 0 400 300" class="w-full max-w-2xl mx-auto">
+                                <!-- Brain -->
+                                <ellipse cx="200" cy="60" rx="50" ry="30" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                                <text x="200" y="65" text-anchor="middle" class="text-sm font-semibold">Otak</text>
+                                
+                                <!-- Spinal cord -->
+                                <rect x="195" y="90" width="10" height="120" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+                                <text x="220" y="150" class="text-xs font-semibold">Sumsum Tulang Belakang</text>
+                                
+                                <!-- Nerves -->
+                                <line x1="200" y1="120" x2="150" y2="140" stroke="#10b981" stroke-width="2"/>
+                                <line x1="200" y1="140" x2="250" y2="160" stroke="#10b981" stroke-width="2"/>
+                                <line x1="200" y1="160" x2="130" y2="180" stroke="#10b981" stroke-width="2"/>
+                                <line x1="200" y1="180" x2="270" y2="200" stroke="#10b981" stroke-width="2"/>
+                                
+                                <!-- Stimulus arrow -->
+                                <path d="M 50 100 L 140 130" stroke="#ef4444" stroke-width="3" marker-end="url(#arrowhead)"/>
+                                <text x="70" y="95" class="text-xs font-semibold fill-red-600">Rangsang</text>
+                                
+                                <!-- Response arrow -->
+                                <path d="M 260 170 L 350 200" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrowhead)"/>
+                                <text x="280" y="165" class="text-xs font-semibold fill-blue-600">Respons</text>
+                                
+                                <!-- Arrow marker -->
+                                <defs>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/>
+                                    </marker>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cara Kerja Saraf -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Cara Kerja Sistem Saraf:</h3>
+                    <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg">
+                        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4">
+                            <div class="bg-white p-4 rounded-lg flex-1 text-center">
+                                <div class="text-2xl mb-2">👁️</div>
+                                <h4 class="font-semibold text-indigo-800">1. Reseptor</h4>
+                                <p class="text-sm text-gray-700">Menerima rangsang dari lingkungan</p>
+                            </div>
+                            <div class="text-2xl">➡️</div>
+                            <div class="bg-white p-4 rounded-lg flex-1 text-center">
+                                <div class="text-2xl mb-2">🧠</div>
+                                <h4 class="font-semibold text-green-800">2. Pusat Saraf</h4>
+                                <p class="text-sm text-gray-700">Memproses dan menganalisis informasi</p>
+                            </div>
+                            <div class="text-2xl">➡️</div>
+                            <div class="bg-white p-4 rounded-lg flex-1 text-center">
+                                <div class="text-2xl mb-2">💪</div>
+                                <h4 class="font-semibold text-purple-800">3. Efektor</h4>
+                                <p class="text-sm text-gray-700">Melakukan respons (otot/kelenjar)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Penyakit Tulang -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Penyakit pada Sistem Gerak:</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">🦴 Penyakit Tulang:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• <strong>Osteoporosis:</strong> Tulang keropos</li>
+                                <li>• <strong>Rakitis:</strong> Kekurangan vitamin D</li>
+                                <li>• <strong>Skoliosis:</strong> Tulang belakang bengkok</li>
+                                <li>• <strong>Artritis:</strong> Peradangan sendi</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">🛡️ Cara Pencegahan:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Konsumsi makanan bergizi (kalsium, vitamin D)</li>
+                                <li>• Olahraga teratur</li>
+                                <li>• Postur tubuh yang benar</li>
+                                <li>• Hindari kebiasaan buruk</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menjaga Kesehatan -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Cara Menjaga Kesehatan Tulang:</h3>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="bg-yellow-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🥛</div>
+                            <h4 class="font-semibold text-yellow-800">Nutrisi</h4>
+                            <p class="text-xs text-gray-700">Kalsium, Vitamin D, Protein</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🏃</div>
+                            <h4 class="font-semibold text-green-800">Olahraga</h4>
+                            <p class="text-xs text-gray-700">Aktivitas fisik teratur</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">☀️</div>
+                            <h4 class="font-semibold text-blue-800">Sinar Matahari</h4>
+                            <p class="text-xs text-gray-700">Vitamin D alami</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🚫</div>
+                            <h4 class="font-semibold text-purple-800">Hindari</h4>
+                            <p class="text-xs text-gray-700">Rokok, alkohol berlebihan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sejarah Indonesia Tab -->
+        <div id="sejarah" class="tab-content">
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">🏛️ Sejarah Indonesia</h2>
+                
+                <!-- Penjelajahan -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Pelaut Penjelajah:</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">🇵🇹 Vasco da Gama</h4>
+                            <p class="text-sm text-gray-700">Pelaut Portugis yang menemukan jalur laut ke India melalui Tanjung Harapan</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">🇪🇸 Christopher Columbus</h4>
+                            <p class="text-sm text-gray-700">Penjelajah Spanyol yang berlayar ke barat dan menemukan Amerika</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-orange-800">🇳🇱 Cornelis de Houtman</h4>
+                            <p class="text-sm text-gray-700">Pelaut Belanda pertama yang tiba di Banten tahun 1596</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VOC -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">VOC (Vereenigde Oostindische Compagnie):</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">📋 Latar Belakang Pembentukan:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Persaingan dagang antar perusahaan Belanda</li>
+                                <li>• Kebutuhan modal besar untuk perdagangan</li>
+                                <li>• Menghadapi persaingan dengan Portugis dan Spanyol</li>
+                                <li>• Dibentuk tahun 1602</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">⚖️ Hak Istimewa VOC:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Monopoli perdagangan di Asia</li>
+                                <li>• Mencetak uang sendiri</li>
+                                <li>• Memiliki tentara sendiri</li>
+                                <li>• Mengadakan perjanjian dengan raja-raja lokal</li>
+                                <li>• Mendirikan benteng</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg mt-4">
+                        <h4 class="font-semibold text-yellow-800 mb-2">📉 Pembubaran VOC (1799):</h4>
+                        <p class="text-sm text-gray-700">VOC dibubarkan karena korupsi, hutang yang besar, dan persaingan dengan Inggris. Wilayah VOC kemudian diambil alih oleh pemerintah Belanda.</p>
+                    </div>
+                </div>
+
+                <!-- Tanam Paksa -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Sistem Tanam Paksa (Cultuurstelsel):</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 mb-2">📖 Tentang Tanam Paksa:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Diterapkan oleh Johannes van den Bosch (1830)</li>
+                                <li>• Rakyat wajib menanam tanaman ekspor</li>
+                                <li>• 1/5 tanah untuk tanaman wajib</li>
+                                <li>• Hasil diserahkan kepada pemerintah</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">💔 Akibat Tanam Paksa:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Kelaparan dan kemiskinan rakyat</li>
+                                <li>• Penurunan produksi pangan</li>
+                                <li>• Kerja paksa yang berat</li>
+                                <li>• Penderitaan rakyat Indonesia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Politik Etis -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Politik Etis (Trilogi van Deventer):</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🏫</div>
+                            <h4 class="font-semibold text-green-800">Edukasi</h4>
+                            <p class="text-sm text-gray-700">Pendidikan untuk pribumi</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🚰</div>
+                            <h4 class="font-semibold text-blue-800">Irigasi</h4>
+                            <p class="text-sm text-gray-700">Pengairan untuk pertanian</p>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🏗️</div>
+                            <h4 class="font-semibold text-yellow-800">Transmigrasi</h4>
+                            <p class="text-sm text-gray-700">Perpindahan penduduk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perlawanan Rakyat -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Perlawanan Rakyat:</h3>
+                    <div class="space-y-4">
+                        <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                            <h4 class="font-semibold text-red-800 mb-2">⚔️ Perang Diponegoro (1825-1830)</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <strong>Tokoh:</strong> Pangeran Diponegoro<br>
+                                    <strong>Lokasi:</strong> Jawa Tengah dan Yogyakarta
+                                </div>
+                                <div>
+                                    <strong>Penyebab:</strong> Campur tangan Belanda dalam istana, pembangunan jalan melewati makam leluhur
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                            <h4 class="font-semibold text-orange-800 mb-2">🕌 Perang Padri (1821-1837)</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <strong>Tokoh:</strong> Tuanku Imam Bonjol, Tuanku Nan Renceh<br>
+                                    <strong>Lokasi:</strong> Sumatera Barat
+                                </div>
+                                <div>
+                                    <strong>Penyebab:</strong> Konflik antara kaum Padri dan kaum Adat, campur tangan Belanda
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organisasi Pergerakan -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Organisasi Pergerakan Nasional:</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 mb-2">🎯 Faktor Pembentukan:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Pengaruh pendidikan Barat</li>
+                                <li>• Kesadaran nasional yang tumbuh</li>
+                                <li>• Pengaruh gerakan nasional di negara lain</li>
+                                <li>• Penderitaan akibat penjajahan</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">🏢 Jenis Organisasi:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• <strong>Budi Utomo (1908):</strong> Pendidikan dan kebudayaan</li>
+                                <li>• <strong>Sarekat Islam (1912):</strong> Agama dan ekonomi</li>
+                                <li>• <strong>Indische Partij (1912):</strong> Politik</li>
+                                <li>• <strong>Perhimpunan Indonesia:</strong> Mahasiswa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kemerdekaan -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Menuju Kemerdekaan:</h3>
+                    <div class="space-y-4">
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-2">🏛️ BPUPKI (Sidang Pertama):</h4>
+                            <p class="text-sm text-gray-700">Hasil: Rumusan dasar negara (Pancasila) oleh Ir. Soekarno, Mohammad Yamin, dan Mr. Soepomo</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">📜 Peristiwa Rengasdengklok:</h4>
+                            <p class="text-sm text-gray-700">Tujuan: Mengamankan Soekarno-Hatta dari pengaruh Jepang dan mempercepat proklamasi kemerdekaan</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">🎌 Tokoh Proklamasi:</h4>
+                            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                <div>
+                                    <strong>Ir. Soekarno:</strong> Pembaca teks proklamasi
+                                </div>
+                                <div>
+                                    <strong>Drs. Mohammad Hatta:</strong> Pendamping proklamasi
+                                </div>
+                                <div>
+                                    <strong>Ahmad Soebardjo:</strong> Penyusun teks proklamasi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mempertahankan Kemerdekaan -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Mempertahankan Kemerdekaan:</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">⚔️ Cara Mempertahankan:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• Perlawanan fisik/perang</li>
+                                <li>• Diplomasi internasional</li>
+                                <li>• Gerilya dan perang rakyat</li>
+                                <li>• Persatuan seluruh rakyat</li>
+                            </ul>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 mb-2">👥 Tokoh dan Perannya:</h4>
+                            <ul class="text-sm space-y-1 text-gray-700">
+                                <li>• <strong>Jenderal Sudirman:</strong> Panglima besar TNI</li>
+                                <li>• <strong>Bung Tomo:</strong> Pejuang Surabaya</li>
+                                <li>• <strong>Sultan Hasanuddin:</strong> Ayam Jantan dari Timur</li>
+                                <li>• <strong>Cut Nyak Dhien:</strong> Pahlawan Aceh</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gambar Proklamasi -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Detik-detik Proklamasi Kemerdekaan:</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLin9z0vKI7FNLcmDm9BBD6A7JZEF78qYrhziIE_r7AXH3ECjvL7P6TMn8zlm1_ZZ8d5Gi5FLxuFxpbebM3GYhKxh47o4c6lyRQY2q1nNhb9Vw2-QZdgZc9ZE028yxO7oVBDf_Zvn8dXqvvo5OOHESTIfBJnYVA1LAQ1SP6swY31RcTdUXo5boBSUpzsIo/s320/046348100_. -16_Proklamasi.jpg" 
+                             alt="Foto bersejarah detik-detik proklamasi kemerdekaan Indonesia" 
+                             class="w-full max-w-2xl mx-auto rounded-lg shadow-md mb-4"
+                             onerror="this.style.display='none'; document.getElementById('proklamasi-fallback').style.display='block';">
+                        
+                        <!-- Fallback content if image fails to load -->
+                        <div id="proklamasi-fallback" style="display: none;" class="bg-red-50 p-6 rounded-lg text-center">
+                            <div class="text-6xl mb-4">🇮🇩</div>
+                            <h4 class="font-bold text-red-800 text-lg mb-2">Proklamasi Kemerdekaan Indonesia</h4>
+                            <p class="text-sm text-gray-700">17 Agustus 1945 - Jalan Pegangsaan Timur No. 56, Jakarta</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 mb-2">📍 Fakta Sejarah Proklamasi:</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+                                <div>
+                                    <strong>Tanggal:</strong> 17 Agustus 1945<br>
+                                    <strong>Tempat:</strong> Jalan Pegangsaan Timur No. 56<br>
+                                    <strong>Waktu:</strong> Pukul 10.00 WIB
+                                </div>
+                                <div>
+                                    <strong>Pembaca:</strong> Ir. Soekarno<br>
+                                    <strong>Pendamping:</strong> Drs. Mohammad Hatta<br>
+                                    <strong>Bendera:</strong> Sang Saka Merah Putih
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Para Pahlawan Nasional -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Para Pahlawan Nasional Indonesia:</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                        <img src="https://www.biografiku.com/wp-content/uploads/2019/11/Pahlawan-Nasional.jpg" 
+                             alt="Kolase foto para pahlawan nasional Indonesia" 
+                             class="w-full max-w-3xl mx-auto rounded-lg shadow-md mb-4"
+                             onerror="this.style.display='none'; document.getElementById('heroes-fallback').style.display='block';">
+                        
+                        <!-- Fallback content if image fails to load -->
+                        <div id="heroes-fallback" style="display: none;" class="grid grid-cols-4 gap-4">
+                            <div class="bg-red-50 p-3 rounded text-center">
+                                <div class="text-3xl mb-2">👨‍💼</div>
+                                <p class="text-xs font-semibold">Soekarno</p>
+                            </div>
+                            <div class="bg-blue-50 p-3 rounded text-center">
+                                <div class="text-3xl mb-2">👨‍💼</div>
+                                <p class="text-xs font-semibold">Mohammad Hatta</p>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded text-center">
+                                <div class="text-3xl mb-2">⚔️</div>
+                                <p class="text-xs font-semibold">Jenderal Sudirman</p>
+                            </div>
+                            <div class="bg-yellow-50 p-3 rounded text-center">
+                                <div class="text-3xl mb-2">👸</div>
+                                <p class="text-xs font-semibold">Cut Nyak Dhien</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-center text-gray-600 text-sm mb-4">Coba kalian cari tahu peran para pejuang seperti pada gambar di atas!</p>
+                    </div>
+
+                    <!-- Interactive Heroes Section -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="bg-red-50 p-4 rounded-lg cursor-pointer hover:bg-red-100 transition-all" onclick="showHeroInfo('soekarno')">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🎖️</div>
+                                <h4 class="font-semibold text-red-800">Ir. Soekarno</h4>
+                                <p class="text-xs text-gray-600">Proklamator & Presiden RI I</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg cursor-pointer hover:bg-blue-100 transition-all" onclick="showHeroInfo('hatta')">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🎖️</div>
+                                <h4 class="font-semibold text-blue-800">Drs. Mohammad Hatta</h4>
+                                <p class="text-xs text-gray-600">Proklamator & Wakil Presiden RI I</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg cursor-pointer hover:bg-green-100 transition-all" onclick="showHeroInfo('sudirman')">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">⚔️</div>
+                                <h4 class="font-semibold text-green-800">Jenderal Sudirman</h4>
+                                <p class="text-xs text-gray-600">Panglima Besar TNI</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg cursor-pointer hover:bg-purple-100 transition-all" onclick="showHeroInfo('diponegoro')">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">👑</div>
+                                <h4 class="font-semibold text-purple-800">Pangeran Diponegoro</h4>
+                                <p class="text-xs text-gray-600">Pemimpin Perang Jawa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg cursor-pointer hover:bg-yellow-100 transition-all" onclick="showHeroInfo('cutnyak')">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">👸</div>
+                                <h4 class="font-semibold text-yellow-800">Cut Nyak Dhien</h4>
+                                <p class="text-xs text-gray-600">Pahlawan Wanita Aceh</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg cursor-pointer hover:bg-orange-100 transition-all" onclick="showHeroInfo('hasanuddin')">
+                            <div class="text-center">
+                                <div class="text-4xl mb-2">🦅</div>
+                                <h4 class="font-semibold text-orange-800">Sultan Hasanuddin</h4>
+                                <p class="text-xs text-gray-600">Ayam Jantan dari Timur</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Information Display -->
+                    <div id="hero-info" class="mt-4 p-4 bg-white rounded-lg border-l-4 border-indigo-500">
+                        <p class="text-gray-600">Klik pada kartu pahlawan di atas untuk melihat informasi detail tentang perjuangan mereka!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Tab -->
+        <div id="quiz" class="tab-content">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">🎯 Kuis Interaktif</h2>
+                <div id="quiz-container">
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-lg font-semibold">Pertanyaan <span id="question-number">1</span> dari 10</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Skor: <span id="score">0</span></span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                            <div id="progress-bar" class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: 10%"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="question-container" class="mb-6">
+                        <h3 id="question-text" class="text-xl font-semibold text-gray-800 mb-4"></h3>
+                        <div id="options-container" class="space-y-3"></div>
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <button id="prev-btn" onclick="previousQuestion()" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg font-semibold transition-all" disabled>
+                            ← Sebelumnya
+                        </button>
+                        <button id="next-btn" onclick="nextQuestion()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-all" disabled>
+                            Selanjutnya →
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="result-container" class="hidden text-center">
+                    <div class="text-6xl mb-4">🎉</div>
+                    <h3 class="text-2xl font-bold text-green-600 mb-2">Kuis Selesai!</h3>
+                    <p class="text-lg text-gray-700 mb-4">Skor Anda: <span id="final-score" class="font-bold text-indigo-600"></span> dari 10</p>
+                    <button onclick="restartQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-all">
+                        🔄 Ulangi Kuis
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-indigo-100');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            
+            // Activate selected button
+            event.target.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-indigo-100');
+            event.target.classList.add('bg-indigo-600', 'text-white');
+        }
+
+        // Bone info functionality
+        function showBoneInfo(boneName) {
+            const boneInfo = document.getElementById('bone-info');
+            const info = {
+                frontal: 'Tulang Frontal: Membentuk dahi dan melindungi otak bagian depan',
+                parietal: 'Tulang Parietal: Membentuk bagian atas dan samping tengkorak',
+                temporal: 'Tulang Temporal: Melindungi telinga dan berisi saluran pendengaran',
+                occipital: 'Tulang Occipital: Membentuk bagian belakang tengkorak',
+                nasal: 'Tulang Hidung: Membentuk batang hidung',
+                maxilla: 'Tulang Rahang Atas: Membentuk rahang atas dan langit-langit mulut',
+                mandible: 'Tulang Rahang Bawah: Satu-satunya tulang tengkorak yang dapat bergerak'
+            };
+            
+            boneInfo.innerHTML = `<p class="font-semibold text-indigo-800">${info[boneName]}</p>`;
+        }
+
+        // Hero info functionality
+        function showHeroInfo(heroName) {
+            const heroInfo = document.getElementById('hero-info');
+            const info = {
+                soekarno: {
+                    title: '🎖️ Ir. Soekarno (1901-1970)',
+                    content: 'Proklamator kemerdekaan Indonesia dan Presiden RI pertama. Dikenal sebagai "Bung Karno", beliau adalah arsitek kemerdekaan yang merumuskan Pancasila sebagai dasar negara. Memimpin perjuangan diplomasi internasional dan mempersatukan bangsa Indonesia.'
+                },
+                hatta: {
+                    title: '🎖️ Drs. Mohammad Hatta (1902-1980)',
+                    content: 'Proklamator kemerdekaan Indonesia dan Wakil Presiden RI pertama. Dikenal sebagai "Bapak Koperasi Indonesia" dan "The Gentleman". Berperan penting dalam perumusan dasar negara dan sistem ekonomi Indonesia yang berdasarkan kekeluargaan.'
+                },
+                sudirman: {
+                    title: '⚔️ Jenderal Sudirman (1916-1950)',
+                    content: 'Panglima Besar TNI pertama yang memimpin perang gerilya melawan Belanda. Meskipun sakit parah, beliau tetap memimpin dari tandu selama Agresi Militer Belanda II. Simbol keteguhan dan pengorbanan untuk kemerdekaan Indonesia.'
+                },
+                diponegoro: {
+                    title: '👑 Pangeran Diponegoro (1785-1855)',
+                    content: 'Pemimpin Perang Jawa (1825-1830) melawan penjajahan Belanda. Perlawanannya berlangsung selama 5 tahun dan menjadi perang terbesar yang pernah dihadapi Belanda di Nusantara. Dikenal sebagai "Ratu Adil" oleh rakyat Jawa.'
+                },
+                cutnyak: {
+                    title: '👸 Cut Nyak Dhien (1848-1908)',
+                    content: 'Pahlawan wanita dari Aceh yang memimpin perlawanan melawan Belanda selama Perang Aceh. Setelah suaminya Teuku Umar gugur, beliau melanjutkan perjuangan gerilya di hutan-hutan Aceh hingga akhir hayatnya.'
+                },
+                hasanuddin: {
+                    title: '🦅 Sultan Hasanuddin (1631-1670)',
+                    content: 'Raja Gowa-Tallo yang dijuluki "Ayam Jantan dari Timur" oleh Belanda karena keberaniannya. Memimpin perlawanan sengit melawan VOC dalam Perang Makassar (1666-1669) untuk mempertahankan kedaulatan Sulawesi Selatan.'
+                }
+            };
+            
+            const selectedHero = info[heroName];
+            heroInfo.innerHTML = `
+                <h4 class="font-bold text-indigo-800 text-lg mb-2">${selectedHero.title}</h4>
+                <p class="text-gray-700 text-sm leading-relaxed">${selectedHero.content}</p>
+            `;
+        }
+
+        // Quiz functionality
+        const quizQuestions = [
+            {
+                question: "Apa fungsi utama tulang femur?",
+                options: ["Melindungi jantung", "Menopang berat badan", "Menggerakkan tangan", "Melindungi otak"],
+                correct: 1
+            },
+            {
+                question: "Jenis sendi yang memungkinkan gerakan ke segala arah adalah?",
+                options: ["Sendi engsel", "Sendi peluru", "Sendi putar", "Sendi geser"],
+                correct: 1
+            },
+            {
+                question: "Otot yang bekerja secara sadar adalah?",
+                options: ["Otot polos", "Otot jantung", "Otot lurik", "Otot involunter"],
+                correct: 2
+            },
+            {
+                question: "VOC dibentuk pada tahun?",
+                options: ["1600", "1602", "1605", "1610"],
+                correct: 1
+            },
+            {
+                question: "Tokoh yang memimpin Perang Jawa adalah?",
+                options: ["Tuanku Imam Bonjol", "Pangeran Diponegoro", "Cut Nyak Dhien", "Sultan Hasanuddin"],
+                correct: 1
+            },
+            {
+                question: "Trilogi van Deventer terdiri dari?",
+                options: ["Edukasi, Irigasi, Transmigrasi", "Ekonomi, Politik, Sosial", "Pertanian, Industri, Perdagangan", "Militer, Sipil, Agama"],
+                correct: 0
+            },
+            {
+                question: "Penyakit tulang yang disebabkan kekurangan kalsium adalah?",
+                options: ["Rakitis", "Osteoporosis", "Skoliosis", "Artritis"],
+                correct: 1
+            },
+            {
+                question: "Sistem saraf berfungsi untuk?",
+                options: ["Mencerna makanan", "Mengalirkan darah", "Mengkoordinasi tubuh", "Bernapas"],
+                correct: 2
+            },
+            {
+                question: "Organisasi pergerakan nasional pertama di Indonesia adalah?",
+                options: ["Sarekat Islam", "Budi Utomo", "Indische Partij", "Perhimpunan Indonesia"],
+                correct: 1
+            },
+            {
+                question: "Tujuan peristiwa Rengasdengklok adalah?",
+                options: ["Menyerah kepada Jepang", "Mengamankan Soekarno-Hatta", "Berunding dengan Belanda", "Membentuk pemerintahan"],
+                correct: 1
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let selectedAnswer = null;
+
+        function loadQuestion() {
+            const question = quizQuestions[currentQuestion];
+            document.getElementById('question-number').textContent = currentQuestion + 1;
+            document.getElementById('question-text').textContent = question.question;
+            
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'quiz-option bg-gray-50 hover:bg-indigo-50 p-4 rounded-lg cursor-pointer border-2 border-transparent transition-all';
+                optionDiv.innerHTML = `<span class="font-semibold">${String.fromCharCode(65 + index)}.</span> ${option}`;
+                optionDiv.onclick = () => selectAnswer(index, optionDiv);
+                optionsContainer.appendChild(optionDiv);
+            });
+            
+            // Update progress bar
+            const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = progress + '%';
+            
+            // Update buttons
+            document.getElementById('prev-btn').disabled = currentQuestion === 0;
+            document.getElementById('next-btn').disabled = true;
+            selectedAnswer = null;
+        }
+
+        function selectAnswer(index, element) {
+            // Remove previous selection
+            document.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('border-indigo-500', 'bg-indigo-50');
+                opt.classList.add('border-transparent');
+            });
+            
+            // Highlight selected
+            element.classList.add('border-indigo-500', 'bg-indigo-50');
+            element.classList.remove('border-transparent');
+            
+            selectedAnswer = index;
+            document.getElementById('next-btn').disabled = false;
+        }
+
+        function nextQuestion() {
+            if (selectedAnswer === null) return;
+            
+            // Check answer
+            const question = quizQuestions[currentQuestion];
+            const options = document.querySelectorAll('.quiz-option');
+            
+            if (selectedAnswer === question.correct) {
+                score++;
+                options[selectedAnswer].classList.add('correct');
+            } else {
+                options[selectedAnswer].classList.add('incorrect');
+                options[question.correct].classList.add('correct');
+            }
+            
+            document.getElementById('score').textContent = score;
+            
+            setTimeout(() => {
+                currentQuestion++;
+                if (currentQuestion < quizQuestions.length) {
+                    loadQuestion();
+                } else {
+                    showResults();
+                }
+            }, 1500);
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                loadQuestion();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('result-container').classList.remove('hidden');
+            document.getElementById('final-score').textContent = score;
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            selectedAnswer = null;
+            document.getElementById('score').textContent = '0';
+            document.getElementById('quiz-container').classList.remove('hidden');
+            document.getElementById('result-container').classList.add('hidden');
+            loadQuestion();
+        }
+
+        // Initialize quiz
+        loadQuestion();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c6472ea5a75ce5',t:'MTc1NzQxNjYzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
